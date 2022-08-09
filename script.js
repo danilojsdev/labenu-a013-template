@@ -46,6 +46,7 @@ const num1 = Number(prompt('Escreva um número:'));
 //   console.log('O número é divisivel por 2.')
 //     }if(num1 % 3 === 0){
 //     console.log('O número é divisivel por 3.')
+//     console.log(num1===30? 'Ufa acertei!' : "não foi dessa vez:")
 //     }else{
 //     console.log('O número não é divisível por 3.')
 // }else{
@@ -54,24 +55,27 @@ const num1 = Number(prompt('Escreva um número:'));
 
 if(num1 % 2 === 0 && num1 % 3 === 0){
     console.log('O número é divisível por 2 e 3.')
+    console.log(num1===30? 'Ufa acertei!' : "não foi dessa vez:")
 }else{
     console.log('O número não é divisível por 2 e 3.')
 }
 
-console.log(num1===30? 'Ufa acertei!' : "não foi dessa vez:")
-
 switch(num1){
-    case 1: 
+    case 6: 
         console.log('Você digitou o número 6.')
         break;
-    case 2:
+    case 12:
         console.log('Você digitou o número 12.')
-    case 3:
+        break;
+    case 18:
         console.log('Você digitou o número 18.')
-    case 4:
+        break;
+    case 24:
         console.log('Você digitou o número 24.')
-    case 5:
+        break;
+    case 30:
         console.log('Você digitou o número 30.')
+        break;
     default:
         console.log('O número é maior que 30 ou menor que 6.')
 }
